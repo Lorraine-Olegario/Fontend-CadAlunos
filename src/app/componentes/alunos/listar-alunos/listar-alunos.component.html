@@ -1,0 +1,32 @@
+<section class="container">
+    <div class="geral">
+        <h2 class="ff-inter">Listagem de Alunos</h2>
+
+        <div class="buscar-alunos">
+            <input type="search" class="filtro" placeholder="Buscar Aluno" autofocus [(ngModel)]="filtro" (keyup)="pesquisarAlunos()">
+            <img src="/assets/imagens/lupa.png"  alt="Lupa azul">
+        </div>
+
+        <button routerLink="/criarAluno" id="add-aluno" class="btn btn-sm btn-primary">Adicionar aluno</button>
+        <!-- <div class="mural" *ngIf="listarAlunos.length > 0, else semAlunos">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Matrícula</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Data Nasc</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let aluno of listarAlunos"> -->
+                        <app-aluno></app-aluno>
+                    <!-- </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+</section>
+
+

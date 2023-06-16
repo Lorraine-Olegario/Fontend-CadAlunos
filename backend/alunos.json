@@ -1,0 +1,122 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "matricula": "210300002",
+      "nome": "Lorraine Olegario de Souza Silva",
+      "data__nasc": "17-02-2002"
+    },
+    {
+      "id": 2,
+      "matricula": "210300003",
+      "nome": "João da Silva",
+      "data__nasc": "25-09-1998"
+    },
+    {
+      "id": 3,
+      "matricula": "210300004",
+      "nome": "Maria Oliveira",
+      "data__nasc": "10-07-2002"
+    },
+    {
+      "id": 4,
+      "matricula": "210300007",
+      "nome": "Pedro Santos Oliveira",
+      "data__nasc": "03-12-1994"
+    },
+    {
+      "nome": "Kennedy Talles",
+      "matricula": "260922240",
+      "data__nasc": "22-02-1988",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "matricula": "210300008",
+      "nome": "Carolina Santos",
+      "data__nasc": "12-06-1997"
+    },
+    {
+      "id": 8,
+      "matricula": "210300009",
+      "nome": "Rafaela Lima",
+      "data__nasc": "05-04-2000"
+    },
+    {
+      "id": 9,
+      "matricula": "210300010",
+      "nome": "Fernando Torres",
+      "data__nasc": "19-11-1995"
+    },
+    {
+      "id": 10,
+      "matricula": "210300011",
+      "nome": "Lucas Mendes",
+      "data__nasc": "08-08-2003"
+    },
+    {
+      "id": 11,
+      "matricula": "210300012",
+      "nome": "Amanda Costa",
+      "data__nasc": "30-03-1999"
+    },
+    {
+      "id": 13,
+      "matricula": "210300014",
+      "nome": "Marina Santos",
+      "data__nasc": "27-09-2001"
+    },
+    {
+      "id": 14,
+      "matricula": "210300015",
+      "nome": "Ricardo Almeida",
+      "data__nasc": "09-05-1993"
+    },
+    {
+      "id": 15,
+      "matricula": "210300016",
+      "nome": "Mariana Ribeiro",
+      "data__nasc": "23-11-1997"
+    },
+    {
+      "id": 16,
+      "matricula": "210300017",
+      "nome": "Gustavo Oliveira",
+      "data__nasc": "06-02-2000"
+    },
+    {
+      "id": 17,
+      "matricula": "210300018",
+      "nome": "Camila Rodrigues",
+      "data__nasc": "18-12-1994"
+    },
+    {
+      "nome": "Makaylla Olegario de Souza Silva",
+      "matricula": "552100002",
+      "data__nasc": "25-05-2011",
+      "endereco": {
+        "logradouro": "Graciliano Ramos",
+        "bairro": "Cidade Nova",
+        "cidade": "Santana Paraiso",
+        "estado": "MG",
+        "numero": "135",
+        "complemento": "Apto 101"
+      },
+      "id": 19
+    },
+    {
+      "nome": "Lorena Campos Maciel",
+      "matricula": "7800021",
+      "data__nasc": "15-06-2002",
+      "endereco": {
+        "logradouro": "Avenida Geraza",
+        "bairro": "Pimental",
+        "cidade": "Alagoinho",
+        "estado": "MG",
+        "numero": "458",
+        "complemento": ""
+      },
+      "id": 20
+    }
+  ]
+}
