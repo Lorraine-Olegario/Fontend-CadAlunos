@@ -1,6 +1,6 @@
 # Projeto CadAlunos+
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3 e consiste em um sistema CRUD (Create, Read, Update, Delete) de alunos.
+Este projeto foi gerado com a CLI Angular versão 16.0.3 e consiste em um sistema CRUD (Create, Read, Update, Delete) de alunos.
 
 ## Instruções de execução
 
@@ -29,6 +29,6 @@ Para configurar o backend e testar o aplicativo, siga as etapas abaixo:
 3.    Em seguida, execute o comando `npm start` para iniciar o backend 
 4.    O backend estará em execução na porta 3000.
 
-## Further help
+## Mais ajuda
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obter mais ajuda sobre o uso da CLI Angular ou vá conferir a página Visão geral da CLI angular e Referência de comando `ng help`
