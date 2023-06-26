@@ -1,26 +1,33 @@
-# Escola
+# Projeto CadAlunos+
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3 e consiste em um sistema CRUD (Create, Read, Update, Delete) de alunos.
 
-## Development server
+## Instruções de execução
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Configuração do ambiente
 
-## Code scaffolding
+Antes de executar o projeto, certifique-se de ter o Node.js e o Angular CLI instalados em seu sistema.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1.    Para instalar o Node.js, visite o site oficial em https://nodejs.org e faça o download da versão adequada ao seu sistema operacional. Siga as instruções de instalação fornecidas.
 
-## Build
+### Servidor de Desenvolvimento
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para executar o servidor de desenvolvimento, siga os passos abaixo:
 
-## Running unit tests
+1.    Navegue até a pasta raiz do projeto.
+2.    Execute o comando `npm install` para instalar as dependências do projeto 
+3.    Em seguida, execute o seguinte comando: `ng serve`
+4.    Abra o navegador e acesse http://localhost:4200/.
+5.    O aplicativo será recarregado automaticamente sempre que você fizer alguma alteração nos arquivos de origem.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Configuração do Backend
 
-## Running end-to-end tests
+Para configurar o backend e testar o aplicativo, siga as etapas abaixo:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1.    Acesse a pasta backend do projeto.
+2.    Execute o comando `npm install` para instalar as dependências necessárias 
+3.    Em seguida, execute o comando `npm start` para iniciar o backend 
+4.    O backend estará em execução na porta 3000.
 
 ## Further help
 
