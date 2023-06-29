@@ -5,28 +5,23 @@ import { NgxMaskModule } from 'ngx-mask';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
-import { RodapeComponent } from './componentes/rodape/rodape.component';
-import { ListarAlunosComponent } from './componentes/alunos/listar-alunos/listar-alunos.component';
-import { EditarAlunosComponent } from './componentes/alunos/editar-alunos/editar-alunos.component';
-import { DeletarAlunosComponent } from './componentes/alunos/deletar-alunos/deletar-alunos.component';
-import { CriarAlunosComponent } from './componentes/alunos/criar-alunos/criar-alunos.component';
-import { FormsModule } from '@angular/forms';
-import { AlunoComponent } from './componentes/alunos/aluno/aluno.component';
-import { MenuLetaralComponent } from './componentes/menu-letaral/menu-letaral.component';
-
+import { CabecalhoComponent } from './componentes/header/header.component';
+import { RodapeComponent } from './componentes/footer/footer.component';
+import { listarAlunosComponente } from './componentes/students/list-students/list-students.component';
+import { EditStudentsComponent } from './componentes/students/edit-students/edit-students.component';
+import { DeleteStudentsComponent } from './componentes/students/delete-students/delete-students.component';
+import { CreateStudentsComponent } from './componentes/students/create-students/create-students.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
         AppComponent,
         CabecalhoComponent,
         RodapeComponent,
-        ListarAlunosComponent,
-        EditarAlunosComponent,
-        DeletarAlunosComponent,
-        CriarAlunosComponent,
-        AlunoComponent,
-        MenuLetaralComponent
+        listarAlunosComponente,
+        EditStudentsComponent,
+        DeleteStudentsComponent,
+        CreateStudentsComponent
     ],
     imports: [
         BrowserModule,
@@ -34,6 +29,7 @@ import { MenuLetaralComponent } from './componentes/menu-letaral/menu-letaral.co
         FormsModule,
         HttpClientModule,
         NgxMaskModule.forRoot(),
+        ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

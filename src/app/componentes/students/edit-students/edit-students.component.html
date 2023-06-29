@@ -1,0 +1,124 @@
+<section>
+    <div class="container">
+        <div class="geral">
+            <h2>Editar Informações do Aluno</h2>
+
+            <form *ngIf="formulario" [formGroup]="formulario">
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="name" id="name" placeholder="*Nome Completo">
+                    <div class="mensagem__erro" *ngIf="formulario.get('name')?.hasError('required') && formulario.get('name')?.touched">
+                        Nome é obtigatório!
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="registration" id="registration" placeholder="* Matrícula">
+                        </div>
+                        <div class="mensagem__erro" *ngIf="formulario.get('registration')?.hasError('required') && formulario.get('registration')?.touched">
+                            Matricula é obtigatório!
+                        </div>
+
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="cpf" id="cpf" placeholder="* CPF" mask="000.000.000-00" maxlength="14">
+                        </div>
+                        <div class="mensagem__erro" *ngIf="formulario.get('cpf')?.hasError('required') && formulario.get('cpf')?.touched">
+                            CPF é obtigatório!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="date_birth" id="date_birth" placeholder="* Data Nascimento" mask="00-00-0000" maxlength="10">
+                        </div>
+                        <div class="mensagem__erro" *ngIf="formulario.get('date_birth')?.hasError('required') && formulario.get('date_birth')?.touched">
+                            Data Nascimento é obtigatório!
+                        </div>
+
+                        <div class="col" formGroupName="addresses">
+                            <input type="text" class="form-control" formControlName="zip_code" id="zip_code" placeholder="CEP" maxlength="8">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" formGroupName="addresses">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="public_place" id="public_place" placeholder="Rua/Avenida">
+                        </div>
+
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="neighborhood" id="Bairro" placeholder="Bairro">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" formGroupName="addresses">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="city" id="Cidade" placeholder="* Cidade">
+                        </div>
+                        <div class="mensagem__erro" *ngIf="formulario.get('city')?.hasError('required') && formulario.get('city')?.touched">
+                            Cidade é obtigatório!
+                        </div>
+
+                        <div class="col">
+                            <select class="form-control" formControlName="state" id="state" placeholder="* Estato">
+                                <option value="">Selecione Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                            <div class="mensagem__erro" *ngIf="formulario.get('state')?.hasError('required') && formulario.get('state')?.touched">
+                                Estado é obtigatório!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" formGroupName="addresses">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="number" id="number" placeholder="Número">
+                        </div>
+
+                        <div class="col">
+                            <input type="text" class="form-control" formControlName="complement" id="complement" placeholder="Complemento">
+                        </div>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button (click)="editStudent()" class="btn btn-primary" [disabled]="!formulario.valid" [ngClass]="habilitarButton()">Editar</button>
+                    <button (click)="cancel()" class="btn btn-danger">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,47 @@
+<section class="container">
+    <div class="geral">
+        <h2 class="ff-inter">Listagem de Alunos</h2>
+
+        <div class="buscar-students">
+            <input type="search" class="filtro" placeholder="Buscar Alunos" autofocus [(ngModel)]="filtro" (keyup)="searchStudents()">
+            <img src="/assets/imagens/lupa.png"  alt="Lupa azul">
+        </div>
+
+        <button routerLink="/createStudents" id="add-student" class="btn btn-sm btn-primary">Adicionar Aluno</button>
+        <div class="mural" *ngIf="listStudents.length > 0, else semAlunos">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Matrícula</th>
+                        <th scope="col">name</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let student of listStudents">
+                        <td id="registration" scope="row">{{ student.id }}</td>
+                        <td id="registration" scope="row">{{ student.registration }}</td>
+                        <td id="name">{{ student.name }}</td>
+                        <td id="cpf" >{{ student.cpf }}</td>
+                        <td id="acoes" class="action-icons">
+                            <a class="icones" id="editar" routerLink="/student/editStudents/{{student.id}}">
+                                <i class="fa fa-pencil fa-fw"></i>
+                            </a>
+                            <a class="icones" id="remover" routerLink="/student/deleteStudents/{{student.id}}">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<ng-template #semAlunos>
+    <div class="ff-inter sem-students">
+        <p>Ainda não há students cadastrados!</p>
+    </div>
+</ng-template>

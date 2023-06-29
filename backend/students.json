@@ -1,0 +1,122 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "registration": "210300002",
+      "name": "Lorraine Olegario de Souza Silva",
+      "date_birth": "17-02-2002"
+    },
+    {
+      "id": 2,
+      "registration": "210300003",
+      "name": "João da Silva",
+      "date_birth": "25-09-1998"
+    },
+    {
+      "id": 3,
+      "registration": "210300004",
+      "name": "Maria Oliveira",
+      "date_birth": "10-07-2002"
+    },
+    {
+      "id": 4,
+      "registration": "210300007",
+      "name": "Pedro Santos Oliveira",
+      "date_birth": "03-12-1994"
+    },
+    {
+      "name": "Kennedy Talles",
+      "registration": "260922240",
+      "date_birth": "22-02-1988",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "registration": "210300008",
+      "name": "Carolina Santos",
+      "date_birth": "12-06-1997"
+    },
+    {
+      "id": 8,
+      "registration": "210300009",
+      "name": "Rafaela Lima",
+      "date_birth": "05-04-2000"
+    },
+    {
+      "id": 9,
+      "registration": "210300010",
+      "name": "Fernando Torres",
+      "date_birth": "19-11-1995"
+    },
+    {
+      "id": 10,
+      "registration": "210300011",
+      "name": "Lucas Mendes",
+      "date_birth": "08-08-2003"
+    },
+    {
+      "id": 11,
+      "registration": "210300012",
+      "name": "Amanda Costa",
+      "date_birth": "30-03-1999"
+    },
+    {
+      "id": 13,
+      "registration": "210300014",
+      "name": "Marina Santos",
+      "date_birth": "27-09-2001"
+    },
+    {
+      "id": 14,
+      "registration": "210300015",
+      "name": "Ricardo Almeida",
+      "date_birth": "09-05-1993"
+    },
+    {
+      "id": 15,
+      "registration": "210300016",
+      "name": "Mariana Ribeiro",
+      "date_birth": "23-11-1997"
+    },
+    {
+      "id": 16,
+      "registration": "210300017",
+      "name": "Gustavo Oliveira",
+      "date_birth": "06-02-2000"
+    },
+    {
+      "id": 17,
+      "registration": "210300018",
+      "name": "Camila Rodrigues",
+      "date_birth": "18-12-1994"
+    },
+    {
+      "name": "Makaylla Olegario de Souza Silva",
+      "registration": "552100002",
+      "date_birth": "25-05-2011",
+      "address": {
+        "public_place": "Graciliano Ramos",
+        "neighborhood": "city Nova",
+        "city": "Santana Paraiso",
+        "state": "MG",
+        "number": "135",
+        "complement": "Apto 101"
+      },
+      "id": 19
+    },
+    {
+      "name": "Lorena Campos Maciel",
+      "registration": "7800021",
+      "date_birth": "15-06-2002",
+      "address": {
+        "public_place": "Avenida Geraza",
+        "neighborhood": "Pimental",
+        "city": "Alagoinho",
+        "state": "MG",
+        "number": "458",
+        "complement": ""
+      },
+      "id": 20
+    }
+  ]
+}

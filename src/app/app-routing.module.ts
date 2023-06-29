@@ -1,36 +1,36 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListarAlunosComponent } from './componentes/alunos/listar-alunos/listar-alunos.component';
-import { CriarAlunosComponent } from './componentes/alunos/criar-alunos/criar-alunos.component';
-import { EditarAlunosComponent } from './componentes/alunos/editar-alunos/editar-alunos.component';
-import { DeletarAlunosComponent } from './componentes/alunos/deletar-alunos/deletar-alunos.component';
+import { listarAlunosComponente } from './componentes/students/list-students/list-students.component';
+import { CreateStudentsComponent } from './componentes/students/create-students/create-students.component';
+import { EditStudentsComponent } from './componentes/students/edit-students/edit-students.component';
+import { DeleteStudentsComponent } from './componentes/students/delete-students/delete-students.component';
 
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'listarAlunos',
+        redirectTo: 'listStudents',
         pathMatch: 'full'
     },
     {
-        path: 'listarAlunos',
-        component: ListarAlunosComponent
+        path: 'listStudents',
+        component: listarAlunosComponente
     },
     {
-        path: 'criarAluno',
-        component: CriarAlunosComponent
+        path: 'createStudents',
+        component: CreateStudentsComponent
     },
     {
-        path: 'aluno/editarAluno/:id',
-        component: EditarAlunosComponent
+        path: 'student/editStudents/:id',
+        component: EditStudentsComponent
     },
     {
-        path: 'aluno/deletarAluno/:id',
-        component: DeletarAlunosComponent
+        path: 'student/deleteStudents/:id',
+        component: DeleteStudentsComponent
     }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }
